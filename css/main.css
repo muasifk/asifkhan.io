@@ -1,0 +1,232 @@
+
+/* Define Macros*/  
+@color-1st: #fff;
+@color-sidebar: #38658A;
+
+@menu-width-desktop: 240px;
+@menu-width-tablet: 90px;
+@menu-width-smartphone: 230px;
+
+/* How to use Fonts */
+//font-family: 'Roboto', ;
+//font-family: 'Open Sans', ;
+//font-family: 'Open Sans Condensed', ;
+//font-family: 'Work Sans', ;
+
+html {
+	margin: 0;
+	padding: 0;
+    font-size:100%; 
+	}
+
+body {
+    background: background: url(/img/cream_dust.png) repeat 0 0; /*@color-1st;*/
+   // background: #F5F5F5;
+    color: #545454;
+    //font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    margin:0;
+    text-align: justify;
+    padding-left:@menu-width-desktop;
+}
+
+
+
+
+
+/* -------------------------------------------------------------- 
+                    Navigational items
+-----------------------------------------------------------------*/
+
+/* Main navigation side bar item "nav" */
+.sidebar{
+    height: 100%; /* Full length left navigatio bar*/
+    width: 300px; /* Width of navigatio bar*/
+    position: fixed;
+    z-index: 1;
+    top: 0;  /* navigatio bar start position from top*/
+    left: 0; /* navigatio bar start position from top*/
+    background-color: #38658A; //gray; //#11548B */
+    //background-color: linear-gradient(#38658A, #1154CC);
+    overflow-x: hidden;
+    padding-top: 50px; /* text padding on navigatio bar from top */
+}
+
+
+
+/* Title Name */ 
+.sidebar title{
+    padding: 100px 8px 6px 16px; 
+    text-decoration: none; 
+    font-size: 1.6em; 
+    font-weight: 600;
+    color: #F5F9FC; 
+    display: block; 
+    margin-left: 0em;
+    margin-right: 0em;
+    text-align: left;
+    font-family: 'Roboto';
+
+}
+
+/* Sub Title Name  */
+.sidebar subtitle{
+    padding: 0px 8px 0px 16px; 
+    text-decoration: none;
+    text-align: left;
+    font-style: normal;
+    font-size: 1.4em; 
+    color: #F5F9FC; 
+    display: block; 
+    margin-left: 0em;
+    text-align: left;
+    border-bottom: 0px solid rgba(255,255,255,0.05);
+    font-family: 'Roboto';
+}
+
+
+/* Intro skills  */
+.sidebar intro{
+    padding: 0px 2px 30px 16px; 
+    text-decoration: none;
+    text-align: left;
+    font-style: normal;
+    font-size: 1em; 
+    color: lightblue; 
+    display: block; 
+    margin-left: 0em;
+    margin-right: 0em;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-family: 'Open Sans Condensed';
+}
+
+
+/* Nav Menu Text */
+.sidebar a{
+    padding: 6px 8px 6px 16px; /* */
+    margin-left: 5em;
+    margin-right: 1em;
+    text-align: left;
+    text-decoration: none; /* */
+    font-size: 16px; /* Font Size of navigation menu */
+    color: #F5F9FC; /* Font color of navigation menu */
+    display: block; /* */
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-top: 0px solid rgba(255,255,255,0.05);
+    font-family: 'Open Sans';
+    
+}
+
+.sidebar a:hover {
+  color: white;
+    font-weight: 600;
+    border-bottom: 1px solid oldlace;
+    //border-top: 1px solid oldlace;
+}
+
+/* Class for Social Icons */
+.social{
+    margin-left: 5em;
+    margin-right: 1em;
+    margin-top: 2em; /* vertical distance from menu bar */
+    align-content: center;
+    padding: 0em 0em 0.5em 1em;  /* bottom top right left*/
+    border-bottom: 0px solid oldlace;
+    border-top: 0px solid oldlace;
+    
+}
+
+.social a{
+      display: inline;
+      text-align: center;
+      padding: 1em 0em 0em 0em;  /* */
+      transition: all 0.3s ease;
+      border-bottom: 0px solid oldlace;
+      border-top: 0px solid oldlace;
+      margin-left: 1em;
+      margin-right: 1em;
+      align-items: center;
+      color:lightblue;
+}
+
+.social a:hover{
+    color:white;
+    border-bottom: 0px solid oldlace;
+    font-size: 1em; /* for effect */
+    
+}
+
+/* -------------------------------------------------------------- 
+                    Main Window
+-----------------------------------------------------------------*/
+
+/* Main Body (Right side of page) */
+.main {
+    background: white;
+    margin-left: 25em; /* Same as the width of the sidenav */
+    margin-right: 25em; /* Same as the width of the sidenav */
+    margin-top: 150px; /* Same as the width of the sidenav */
+    margin-bottom: 100px; /* Same as the width of the sidenav */
+    font-size: 1em; /* Increased text to enable scrolling */
+    padding: 0px 10px; 
+}
+
+/* Bulleted Text */
+.main ul li{
+  padding: 0.3em; /* Spacing between bullets */
+  font-size: 1rem;
+  padding-left: 1rem;
+  list-style-position: outside;
+  list-style-type: square; //circle, square
+  
+}    
+
+.main ul li a{
+  display: inline;
+}
+
+
+
+/* ------------  Headers --------- */
+h1, h2, h3, h4, h5 {
+	margin-top: 35px;
+	margin-bottom: 0;
+    color: $dimgray;
+}
+
+h1 { font:  bold 2em; letter-spacing: 1px; margin-bottom: 5; color: $dimgray; font-family: Roboto, sans-serif;}
+h2 {font:  bold 1.5em; letter-spacing: 1px; margin-bottom: 0; color: $dimgray; font-family: Roboto, sans-serif;}
+h3 {font:  bold 1.2em; letter-spacing: 1px;  margin-bottom: 0; font-family: Roboto, sans-serif;}
+h4 {font:  bold 1em; letter-spacing: 1px; margin-top: 0.2em;}
+p {align-content: 'justify' font-family: 'Work Sans' line-height: 1.5;}
+
+.authorname {font-weight: 600;}
+
+
+.papertitle {color: steelblue; font-style: normal; border-bottom: 0px ;}
+a.papertitle:link {border-bottom: 0px solid darkgray; text-decoration: none;} /*Unvisited*/
+//a.papertitle:visited {border-bottom: 0px solid darkgray;} /*when a user clicks the link.*/
+a.papertitle:hover {border-bottom: 1px solid steelblue;} /*when the mouse pointer hovers over it.*/
+//a.papertitle:active {border-bottom: 0px solid darkgray;} /*visited link.*/
+
+
+.interests {color: steelblue; font-style: normal; font-family: 'Roboto'; border-left: 2px solid steelblue; background: #F5F5F5; padding: 1em 1em 1em 1em;}
+
+
+.extlink{color: steelblue; font-style: normal; text-decoration: none;}
+a.extlink:link {border-bottom: 0px solid darkgray;}
+a.extlink:hover {border-bottom: 1px solid steelblue;}
+
+
+
+/* --------------------  Media Queries --------------- */
+
+@media screen and (max-height: 450px) {
+.nav {padding-top: 15px;}
+.nav a {font-size: 18px;}
+}
+
+//@media (min-width: 640px) { body {font-size:1rem;} } 
+//@media (min-width:960px) { body {font-size:1.2rem;} } 
+//@media (min-width:1100px) { body {font-size:1.5rem;} } 
