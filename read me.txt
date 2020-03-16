@@ -1,0 +1,25 @@
+
+
+Steps to create app using React.js, Visit:
+https://create-react-app.dev/
+
+1. Create app.
+> npx create-react-app apps-ai
+
+2. Install bootstrap and reactstrap
+> cd apps-ai
+> npm install --save bootstrap
+> npm install --save reactstrap react react-dom
+
+
+3. Some Good Tips
++ In the "src" directory, create a folder "assets/images" and put all images there.
++ In the "src" directory, create a folder "src/components" and put all components there.
+
+4. Install "aphrodite" for the styles and "simple-flexbox" to make the layout.
+> npm install aphrodite simple-flexbox 
+
+5. App Layout is as follow:
+
+1. Side bar - contain logo and menu
+2. Main Bar - contain header and contents
